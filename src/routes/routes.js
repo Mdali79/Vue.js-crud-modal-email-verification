@@ -1,15 +1,22 @@
 import ContactList from '../components/ContactList';
 import AddContact from '../components/AddContact';
 import EditContact from '../components/EditContact';
+import UserInfo from '../components/UserInfo';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes=[
+  {
+    name:'UserInfo',
+    path:'/',
+    component:UserInfo
+
+  },
     
     {
 
 
         name:'ContactList',
-        path:'/',
+        path:'/contact_list',
         component:ContactList
   },
   {

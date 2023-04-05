@@ -1,10 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import routes from './routes/routes'
-// import Vue from 'vue'
-// import VueModal from '@kouts/vue-modal'
-// import '@kouts/vue-modal/dist/vue-modal.css'
-// Vue.component('VueModal', VueModal)
+import Toaster from '@meforma/vue-toaster';
 
 
-createApp(App).use(routes).mount('#app')
+createApp(App).use(Toaster).use(routes).mount('#app')
